@@ -1,0 +1,134 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: WebRobot - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x804 /fo"Debug/WebRobot.res" /d "_DEBUG" /d "_AFXDLL" "H:\电影\【WebRobot】\WebRobot_8\WebRobot.rc"" 
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP1CE5.tmp" with contents
+[
+/nologo /MDd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_MBCS" /D "_AFXDLL" /FR"Debug/" /Fp"Debug/WebRobot.pch" /Yu"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"H:\电影\【WebRobot】\WebRobot_8\BrowserDlg.cpp"
+"H:\电影\【WebRobot】\WebRobot_8\BrowserSettingDlg.cpp"
+"H:\电影\【WebRobot】\WebRobot_8\MainDlg.cpp"
+"H:\电影\【WebRobot】\WebRobot_8\PluginDlg.cpp"
+"H:\电影\【WebRobot】\WebRobot_8\SettingDlg.cpp"
+"H:\电影\【WebRobot】\WebRobot_8\webbrowser2.cpp"
+"H:\电影\【WebRobot】\WebRobot_8\WebRobot.cpp"
+"H:\电影\【WebRobot】\WebRobot_8\WebRobotDlg.cpp"
+"H:\电影\【WebRobot】\WebRobot_8\ExClass\CoolTabCtrl\CoolTabCtrl.cpp"
+"H:\电影\【WebRobot】\WebRobot_8\ExClass\SplitterControl\SplitterControl.cpp"
+"H:\电影\【WebRobot】\WebRobot_8\ExClass\ListMoveItem\ListMoveItem.cpp"
+"H:\电影\【WebRobot】\WebRobot_8\ExClass\CRC32\CRC32.cpp"
+"H:\电影\【WebRobot】\WebRobot_8\ExClass\CRC32\CRCFile.cpp"
+"H:\电影\【WebRobot】\WebRobot_8\ExClass\XHTMLStatic\XHTMLStatic.cpp"
+"H:\电影\【WebRobot】\WebRobot_8\ExClass\XHTMLStatic\XNamedColors.cpp"
+"H:\电影\【WebRobot】\WebRobot_8\ExClass\CoolMenu\NewMenu.cpp"
+"H:\电影\【WebRobot】\WebRobot_8\ExClass\CoolMenu\NewToolBar.cpp"
+"H:\电影\【WebRobot】\WebRobot_8\ExClass\IniFile\IniFile.cpp"
+"H:\电影\【WebRobot】\WebRobot_8\ExClass\TrayIcon\TrayIcon.cpp"
+"H:\电影\【WebRobot】\WebRobot_8\ExClass\WebHost\GetWeb.cpp"
+"H:\电影\【WebRobot】\WebRobot_8\ExClass\WebHost\WebHost.cpp"
+"H:\电影\【WebRobot】\WebRobot_8\ExClass\CButtonST\BtnST.cpp"
+"H:\电影\【WebRobot】\WebRobot_8\ExClass\Tools\ButtonXP.cpp"
+"H:\电影\【WebRobot】\WebRobot_8\ExClass\Tools\ComboBoxXP.cpp"
+"H:\电影\【WebRobot】\WebRobot_8\ExClass\Tools\Draw.cpp"
+"H:\电影\【WebRobot】\WebRobot_8\ExClass\Tools\MenuXP.cpp"
+"H:\电影\【WebRobot】\WebRobot_8\ExClass\Tools\StatusBarXP.cpp"
+"H:\电影\【WebRobot】\WebRobot_8\ExClass\Tools\ToolBarXP.cpp"
+"H:\电影\【WebRobot】\WebRobot_8\ExClass\Tools\Tools.cpp"
+"H:\电影\【WebRobot】\WebRobot_8\ExClass\InputDlg\InputDlg.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP1CE5.tmp" 
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP1CE6.tmp" with contents
+[
+/nologo /MDd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_MBCS" /D "_AFXDLL" /FR"Debug/" /Fp"Debug/WebRobot.pch" /Yc"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"H:\电影\【WebRobot】\WebRobot_8\StdAfx.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP1CE6.tmp" 
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP1CE7.tmp" with contents
+[
+/nologo /subsystem:windows /incremental:yes /pdb:"Debug/WebRobot.pdb" /debug /machine:I386 /out:"bin/WebRobot.exe" /pdbtype:sept 
+".\Debug\BrowserDlg.obj"
+".\Debug\BrowserSettingDlg.obj"
+".\Debug\MainDlg.obj"
+".\Debug\PluginDlg.obj"
+".\Debug\SettingDlg.obj"
+".\Debug\StdAfx.obj"
+".\Debug\webbrowser2.obj"
+".\Debug\WebRobot.obj"
+".\Debug\WebRobotDlg.obj"
+".\Debug\CoolTabCtrl.obj"
+".\Debug\SplitterControl.obj"
+".\Debug\ListMoveItem.obj"
+".\Debug\CRC32.obj"
+".\Debug\CRCFile.obj"
+".\Debug\XHTMLStatic.obj"
+".\Debug\XNamedColors.obj"
+".\Debug\NewMenu.obj"
+".\Debug\NewToolBar.obj"
+".\Debug\IniFile.obj"
+".\Debug\TrayIcon.obj"
+".\Debug\GetWeb.obj"
+".\Debug\WebHost.obj"
+".\Debug\BtnST.obj"
+".\Debug\ButtonXP.obj"
+".\Debug\ComboBoxXP.obj"
+".\Debug\Draw.obj"
+".\Debug\MenuXP.obj"
+".\Debug\StatusBarXP.obj"
+".\Debug\ToolBarXP.obj"
+".\Debug\Tools.obj"
+".\Debug\InputDlg.obj"
+".\Debug\WebRobot.res"
+]
+Creating command line "link.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP1CE7.tmp"
+<h3>Output Window</h3>
+Compiling resources...
+Compiling...
+StdAfx.cpp
+Compiling...
+BrowserDlg.cpp
+BrowserSettingDlg.cpp
+MainDlg.cpp
+PluginDlg.cpp
+SettingDlg.cpp
+webbrowser2.cpp
+WebRobot.cpp
+WebRobotDlg.cpp
+CoolTabCtrl.cpp
+SplitterControl.cpp
+ListMoveItem.cpp
+CRC32.cpp
+CRCFile.cpp
+XHTMLStatic.cpp
+XNamedColors.cpp
+NewMenu.cpp
+NewToolBar.cpp
+IniFile.cpp
+TrayIcon.cpp
+GetWeb.cpp
+Generating Code...
+Compiling...
+WebHost.cpp
+BtnST.cpp
+ButtonXP.cpp
+ComboBoxXP.cpp
+Draw.cpp
+MenuXP.cpp
+StatusBarXP.cpp
+ToolBarXP.cpp
+Tools.cpp
+InputDlg.cpp
+Generating Code...
+Linking...
+
+
+
+<h3>Results</h3>
+WebRobot.exe - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

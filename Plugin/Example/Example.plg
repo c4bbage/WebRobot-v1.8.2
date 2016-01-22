@@ -1,0 +1,49 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: Example - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x804 /fo"Debug/Example.res" /d "_DEBUG" /d "_AFXDLL" "H:\电影\【WebRobot】\WebRobot_6\Plugin\Example\Example.rc"" 
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP44D3.tmp" with contents
+[
+/nologo /MDd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_WINDLL" /D "_AFXDLL" /D "_MBCS" /D "_USRDLL" /Fp"Debug/Example.pch" /Yu"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"H:\电影\【WebRobot】\WebRobot_6\Plugin\Example\Example.cpp"
+"H:\电影\【WebRobot】\WebRobot_6\Plugin\Example\MainDlg.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP44D3.tmp" 
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP44D4.tmp" with contents
+[
+/nologo /MDd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_WINDLL" /D "_AFXDLL" /D "_MBCS" /D "_USRDLL" /Fp"Debug/Example.pch" /Yc"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"H:\电影\【WebRobot】\WebRobot_6\Plugin\Example\StdAfx.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP44D4.tmp" 
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP44D5.tmp" with contents
+[
+/nologo /subsystem:windows /dll /incremental:yes /pdb:"Debug/Example.pdb" /debug /machine:I386 /def:".\Example.def" /out:"../../bin/plugin/Example.dll" /implib:"Debug/Example.lib" /pdbtype:sept 
+".\Debug\Example.obj"
+".\Debug\MainDlg.obj"
+".\Debug\StdAfx.obj"
+".\Debug\Example.res"
+]
+Creating command line "link.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP44D5.tmp"
+<h3>Output Window</h3>
+Compiling resources...
+Compiling...
+StdAfx.cpp
+Compiling...
+Example.cpp
+MainDlg.cpp
+Generating Code...
+Linking...
+   Creating library Debug/Example.lib and object Debug/Example.exp
+
+
+
+<h3>Results</h3>
+Example.dll - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

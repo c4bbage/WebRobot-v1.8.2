@@ -1,0 +1,82 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: PortScan - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x804 /fo"Release/PortScan.res" /d "NDEBUG" /d "_AFXDLL" "H:\电影\【WebRobot】\WebRobot_8_发布插件\Plugin\PortScan\PortScan.rc"" 
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP7307.tmp" with contents
+[
+/nologo /MD /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_WINDLL" /D "_AFXDLL" /D "_MBCS" /D "_USRDLL" /Fp"Release/PortScan.pch" /Yu"stdafx.h" /Fo"Release/" /Fd"Release/" /FD /c 
+"H:\电影\【WebRobot】\WebRobot_8_发布插件\Plugin\PortScan\ListDlg.cpp"
+"H:\电影\【WebRobot】\WebRobot_8_发布插件\Plugin\PortScan\MainDlg.cpp"
+"H:\电影\【WebRobot】\WebRobot_8_发布插件\Plugin\PortScan\PortScan.cpp"
+"H:\电影\【WebRobot】\WebRobot_8_发布插件\Plugin\common\Tools\ButtonXP.cpp"
+"H:\电影\【WebRobot】\WebRobot_8_发布插件\Plugin\common\Tools\ComboBoxXP.cpp"
+"H:\电影\【WebRobot】\WebRobot_8_发布插件\Plugin\common\Tools\Draw.cpp"
+"H:\电影\【WebRobot】\WebRobot_8_发布插件\Plugin\common\Tools\MenuXP.cpp"
+"H:\电影\【WebRobot】\WebRobot_8_发布插件\Plugin\common\Tools\StatusBarXP.cpp"
+"H:\电影\【WebRobot】\WebRobot_8_发布插件\Plugin\common\Tools\ToolBarXP.cpp"
+"H:\电影\【WebRobot】\WebRobot_8_发布插件\Plugin\common\Tools\Tools.cpp"
+"H:\电影\【WebRobot】\WebRobot_8_发布插件\Plugin\common\IniFile\IniFile.cpp"
+"H:\电影\【WebRobot】\WebRobot_8_发布插件\Plugin\common\CoolMenu\NewMenu.cpp"
+"H:\电影\【WebRobot】\WebRobot_8_发布插件\Plugin\common\CoolMenu\NewToolBar.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP7307.tmp" 
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP7308.tmp" with contents
+[
+/nologo /MD /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_WINDLL" /D "_AFXDLL" /D "_MBCS" /D "_USRDLL" /Fp"Release/PortScan.pch" /Yc"stdafx.h" /Fo"Release/" /Fd"Release/" /FD /c 
+"H:\电影\【WebRobot】\WebRobot_8_发布插件\Plugin\PortScan\StdAfx.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP7308.tmp" 
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP7309.tmp" with contents
+[
+/nologo /subsystem:windows /dll /incremental:no /pdb:"Release/PortScan.pdb" /machine:I386 /def:".\PortScan.def" /out:"../../bin/plugin/PortScan.dll" /implib:"Release/PortScan.lib" 
+".\Release\ListDlg.obj"
+".\Release\MainDlg.obj"
+".\Release\PortScan.obj"
+".\Release\StdAfx.obj"
+".\Release\ButtonXP.obj"
+".\Release\ComboBoxXP.obj"
+".\Release\Draw.obj"
+".\Release\MenuXP.obj"
+".\Release\StatusBarXP.obj"
+".\Release\ToolBarXP.obj"
+".\Release\Tools.obj"
+".\Release\IniFile.obj"
+".\Release\NewMenu.obj"
+".\Release\NewToolBar.obj"
+".\Release\PortScan.res"
+]
+Creating command line "link.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP7309.tmp"
+<h3>Output Window</h3>
+Compiling resources...
+Compiling...
+StdAfx.cpp
+Compiling...
+ListDlg.cpp
+MainDlg.cpp
+PortScan.cpp
+ButtonXP.cpp
+ComboBoxXP.cpp
+Draw.cpp
+MenuXP.cpp
+StatusBarXP.cpp
+ToolBarXP.cpp
+Tools.cpp
+IniFile.cpp
+NewMenu.cpp
+NewToolBar.cpp
+Generating Code...
+Linking...
+   Creating library Release/PortScan.lib and object Release/PortScan.exp
+
+
+
+<h3>Results</h3>
+PortScan.dll - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

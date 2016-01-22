@@ -1,0 +1,7 @@
+; SubDomain.def : Declares the module parameters for the DLL.
+
+LIBRARY      "SubDomain"
+DESCRIPTION  'SubDomain Windows Dynamic Link Library'
+
+EXPORTS
+    ; Explicit exports can go here

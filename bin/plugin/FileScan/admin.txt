@@ -1,0 +1,6 @@
+manage.php
+manager.php
+login.php
+login.asp
+admin.php
+admin.asp

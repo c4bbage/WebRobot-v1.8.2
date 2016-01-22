@@ -1,0 +1,88 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: ScanCSection - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x804 /fo"Release/ScanCSection.res" /d "NDEBUG" /d "_AFXDLL" "H:\电影\【WebRobot】\WebRobot_8_发布插件\Plugin\ScanCSection\ScanCSection.rc"" 
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP7310.tmp" with contents
+[
+/nologo /MD /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_WINDLL" /D "_AFXDLL" /D "_MBCS" /D "_USRDLL" /FR"Release/" /Fp"Release/ScanCSection.pch" /Yu"stdafx.h" /Fo"Release/" /Fd"Release/" /FD /c 
+"H:\电影\【WebRobot】\WebRobot_8_发布插件\Plugin\ScanCSection\BingKeyDlg.cpp"
+"H:\电影\【WebRobot】\WebRobot_8_发布插件\Plugin\ScanCSection\MainDlg.cpp"
+"H:\电影\【WebRobot】\WebRobot_8_发布插件\Plugin\ScanCSection\ScanCSection.cpp"
+"H:\电影\【WebRobot】\WebRobot_8_发布插件\Plugin\common\Tools\ButtonXP.cpp"
+"H:\电影\【WebRobot】\WebRobot_8_发布插件\Plugin\common\Tools\ComboBoxXP.cpp"
+"H:\电影\【WebRobot】\WebRobot_8_发布插件\Plugin\common\Tools\Draw.cpp"
+"H:\电影\【WebRobot】\WebRobot_8_发布插件\Plugin\common\Tools\MenuXP.cpp"
+"H:\电影\【WebRobot】\WebRobot_8_发布插件\Plugin\common\Tools\StatusBarXP.cpp"
+"H:\电影\【WebRobot】\WebRobot_8_发布插件\Plugin\common\Tools\ToolBarXP.cpp"
+"H:\电影\【WebRobot】\WebRobot_8_发布插件\Plugin\common\Tools\Tools.cpp"
+"H:\电影\【WebRobot】\WebRobot_8_发布插件\Plugin\common\CoolMenu\NewMenu.cpp"
+"H:\电影\【WebRobot】\WebRobot_8_发布插件\Plugin\common\CoolMenu\NewToolBar.cpp"
+"H:\电影\【WebRobot】\WebRobot_8_发布插件\Plugin\common\IniFile\IniFile.cpp"
+"H:\电影\【WebRobot】\WebRobot_8_发布插件\Plugin\common\InputDlg\InputDlg.cpp"
+"H:\电影\【WebRobot】\WebRobot_8_发布插件\Plugin\common\ListCtrlEx\ListCtrlEx.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP7310.tmp" 
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP7311.tmp" with contents
+[
+/nologo /MD /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_WINDLL" /D "_AFXDLL" /D "_MBCS" /D "_USRDLL" /FR"Release/" /Fp"Release/ScanCSection.pch" /Yc"stdafx.h" /Fo"Release/" /Fd"Release/" /FD /c 
+"H:\电影\【WebRobot】\WebRobot_8_发布插件\Plugin\ScanCSection\StdAfx.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP7311.tmp" 
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP7312.tmp" with contents
+[
+/nologo /subsystem:windows /dll /incremental:no /pdb:"Release/ScanCSection.pdb" /machine:I386 /def:".\ScanCSection.def" /out:"../../bin/plugin/ScanCSection.dll" /implib:"Release/ScanCSection.lib" 
+".\Release\BingKeyDlg.obj"
+".\Release\MainDlg.obj"
+".\Release\ScanCSection.obj"
+".\Release\StdAfx.obj"
+".\Release\ButtonXP.obj"
+".\Release\ComboBoxXP.obj"
+".\Release\Draw.obj"
+".\Release\MenuXP.obj"
+".\Release\StatusBarXP.obj"
+".\Release\ToolBarXP.obj"
+".\Release\Tools.obj"
+".\Release\NewMenu.obj"
+".\Release\NewToolBar.obj"
+".\Release\IniFile.obj"
+".\Release\InputDlg.obj"
+".\Release\ListCtrlEx.obj"
+".\Release\ScanCSection.res"
+]
+Creating command line "link.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP7312.tmp"
+<h3>Output Window</h3>
+Compiling resources...
+Compiling...
+StdAfx.cpp
+Compiling...
+BingKeyDlg.cpp
+MainDlg.cpp
+ScanCSection.cpp
+ButtonXP.cpp
+ComboBoxXP.cpp
+Draw.cpp
+MenuXP.cpp
+StatusBarXP.cpp
+ToolBarXP.cpp
+Tools.cpp
+NewMenu.cpp
+NewToolBar.cpp
+IniFile.cpp
+InputDlg.cpp
+ListCtrlEx.cpp
+Generating Code...
+Linking...
+   Creating library Release/ScanCSection.lib and object Release/ScanCSection.exp
+
+
+
+<h3>Results</h3>
+ScanCSection.dll - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

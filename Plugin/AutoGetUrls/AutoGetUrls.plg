@@ -1,0 +1,40 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: AutoGetUrls - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP72E5.tmp" with contents
+[
+/nologo /subsystem:windows /dll /incremental:no /pdb:"Release/AutoGetUrls.pdb" /machine:I386 /def:".\AutoGetUrls.def" /out:"../../bin/plugin/AutoGetUrls.dll" /implib:"Release/AutoGetUrls.lib" 
+".\Release\AutoGetUrls.obj"
+".\Release\MainDlg.obj"
+".\Release\StdAfx.obj"
+".\Release\ButtonXP.obj"
+".\Release\ComboBoxXP.obj"
+".\Release\Draw.obj"
+".\Release\MenuXP.obj"
+".\Release\StatusBarXP.obj"
+".\Release\ToolBarXP.obj"
+".\Release\Tools.obj"
+".\Release\GetWeb.obj"
+".\Release\WebHost.obj"
+".\Release\IniFile.obj"
+".\Release\NewMenu.obj"
+".\Release\NewToolBar.obj"
+".\Release\AutoGetUrls.res"
+]
+Creating command line "link.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP72E5.tmp"
+<h3>Output Window</h3>
+Linking...
+   Creating library Release/AutoGetUrls.lib and object Release/AutoGetUrls.exp
+
+
+
+<h3>Results</h3>
+AutoGetUrls.dll - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

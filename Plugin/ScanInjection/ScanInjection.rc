@@ -1,0 +1,245 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Chinese (中国) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\ScanInjection.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""l.chs\\afxres.rc""          // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x2L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080404B0"
+        BEGIN
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "ScanInjection DLL\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "ScanInjection\0"
+            VALUE "LegalCopyright", "版权所有 (C) 2015\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "ScanInjection.DLL\0"
+            VALUE "ProductName", "ScanInjection Dynamic Link Library\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_MAIN_DLG DIALOGEX 0, 0, 669, 293
+STYLE WS_CHILD
+EXSTYLE WS_EX_ACCEPTFILES
+FONT 9, "宋体"
+BEGIN
+    EDITTEXT        IDC_EDIT_TIMEOUT,196,9,27,12,ES_AUTOHSCROLL | NOT 
+                    WS_BORDER,WS_EX_STATICEDGE
+    EDITTEXT        IDC_EDIT_MAXTHREADNUM,125,9,27,12,ES_AUTOHSCROLL | NOT 
+                    WS_BORDER,WS_EX_STATICEDGE
+    EDITTEXT        IDC_EDIT_WEBPAGECHANGERATE,291,9,26,12,ES_AUTOHSCROLL | 
+                    NOT WS_BORDER,WS_EX_STATICEDGE
+    CONTROL         "仅检测普通数字型的注入",IDC_CHECK_NORMAL,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,338,10,104,10
+    PUSHBUTTON      "开始扫描",IDC_BUTTON_SCAN,7,7,67,14
+    CONTROL         "List1",IDC_LIST_URL,"SysListView32",LVS_REPORT | 
+                    LVS_SHOWSELALWAYS | WS_TABSTOP,7,25,655,116,
+                    WS_EX_STATICEDGE
+    CONTROL         "List1",IDC_LIST_RESULT,"SysListView32",LVS_REPORT | 
+                    LVS_SHOWSELALWAYS | WS_TABSTOP,7,146,655,131,
+                    WS_EX_STATICEDGE
+    LTEXT           "线程数:",IDC_STATIC,95,11,29,8
+    LTEXT           "页面大小变化率:",IDC_STATIC,229,11,61,8
+    LTEXT           "%",IDC_STATIC,320,11,8,8
+    LTEXT           "超时时间:",IDC_STATIC,158,11,37,8
+    CONTROL         "",IDC_SPLITTER,"Static",SS_BLACKFRAME | NOT WS_VISIBLE,
+                    0,144,669,1
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_MAIN_DLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 662
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 286
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_MAIN_ICON           ICON    DISCARDABLE     "res\\main.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_BITMAP_URL          BITMAP  DISCARDABLE     "res\\url.bmp"
+IDB_BITMAP_RESULT       BITMAP  DISCARDABLE     "res\\InjectUrl.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MENU_TOP MENU DISCARDABLE 
+BEGIN
+    POPUP "TOP"
+    BEGIN
+        MENUITEM "浏览选定链接(&V)",            ID_MENUITEM_VISIT
+        MENUITEM "复制选定链接(&C)",            ID_MENUITEM_COPY
+        MENUITEM "保存所有链接(&S)",            ID_MENUITEM_SAVE
+        MENUITEM SEPARATOR
+        MENUITEM "添加URL到列表(&A)",           ID_MENUITEM_ADDURLTOLIST
+        MENUITEM "导入URL文件(&I)",             ID_MENUITEM_IMPORT
+        MENUITEM SEPARATOR
+        MENUITEM "删除选定链接(&D)",            ID_MENUITEM_DEL
+        MENUITEM "清空所有链接(&A)",            ID_MENUITEM_CLEAR
+    END
+END
+
+IDR_MENU_BOTTOM MENU DISCARDABLE 
+BEGIN
+    POPUP "BOTTOM"
+    BEGIN
+        MENUITEM "浏览选定链接(&N)",            ID_MENUITEM_VISIT_RESULT
+        MENUITEM "复制选定链接(&C)",            ID_MENUITEM_COPY_RESULT
+        MENUITEM "保存全部链接(&S)",            ID_MENUITEM_SAVE_RESULT
+        MENUITEM SEPARATOR
+        POPUP "处理超时"
+        BEGIN
+            MENUITEM "重新扫描超时链接",            ID_MENUITEM_SCAN_TIMEOUT_URLS
+
+            MENUITEM "删除超时链接",                ID_MENUITEM_DELETE_TIMEOUT_URLS
+
+        END
+        POPUP "删除"
+        BEGIN
+            MENUITEM "删除选定链接(&D)",            ID_MENUITEM_DEL_RESULT
+            MENUITEM "清空所有链接(&A)",            ID_MENUITEM_CLEAR_RESULT
+        END
+    END
+END
+
+#endif    // Chinese (中国) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE 4, 2
+#pragma code_page(936)
+#endif //_WIN32
+#include "res\ScanInjection.rc2"  // non-Microsoft Visual C++ edited resources
+#include "l.chs\afxres.rc"          // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

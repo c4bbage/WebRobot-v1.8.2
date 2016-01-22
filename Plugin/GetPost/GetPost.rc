@@ -1,0 +1,281 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Chinese (中国) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\GetPost.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""l.chs\\afxres.rc""          // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x2L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080404B0"
+        BEGIN
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "GetPost DLL\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "GetPost\0"
+            VALUE "LegalCopyright", "版权所有 (C) 2015\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "GetPost.DLL\0"
+            VALUE "ProductName", "GetPost Dynamic Link Library\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_MAIN_DLG DIALOGEX 0, 0, 527, 450
+STYLE WS_CHILD
+EXSTYLE WS_EX_ACCEPTFILES
+FONT 9, "宋体"
+BEGIN
+    LTEXT           "地址:",IDC_STATIC,4,8,21,8
+    EDITTEXT        IDC_EDIT_URL,54,4,405,14,ES_AUTOHSCROLL | NOT WS_BORDER,
+                    WS_EX_STATICEDGE
+    PUSHBUTTON      "Get",IDC_BUTTON_EXEC,463,3,57,15
+    LTEXT           "Http Header:",IDC_STATIC_HEADER,3,42,48,23,SS_NOTIFY
+    COMBOBOX        IDC_COMBO_MOTHOD,54,22,62,86,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_EDIT_HEADER,54,41,466,104,ES_MULTILINE | 
+                    ES_AUTOVSCROLL | ES_AUTOHSCROLL | ES_WANTRETURN | NOT 
+                    WS_BORDER,WS_EX_STATICEDGE
+    LTEXT           "Post数据:",IDC_STATIC_POST,4,148,37,8
+    EDITTEXT        IDC_EDIT_POST,54,148,466,104,ES_MULTILINE | 
+                    ES_AUTOVSCROLL | ES_AUTOHSCROLL | ES_WANTRETURN | NOT 
+                    WS_BORDER,WS_EX_STATICEDGE
+    LTEXT           "返回信息:",IDC_STATIC,4,255,37,8
+    EDITTEXT        IDC_EDIT_RETURN,54,256,466,187,ES_MULTILINE | 
+                    ES_AUTOVSCROLL | ES_AUTOHSCROLL | ES_WANTRETURN | NOT 
+                    WS_BORDER,WS_EX_STATICEDGE
+    CONTROL         "UTF8编码转换为ANSI编码",IDC_CHECK_UTF8TOANSI,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,124,24,103,10
+    PUSHBUTTON      "插入""[\\0]""",IDC_BUTTON_INSERT,3,161,45,14
+    CTEXT           "保存/载入配置",IDC_STATIC_LOAD_SAVE,245,22,68,15,
+                    SS_NOTIFY | SS_CENTERIMAGE
+    CONTROL         "多线程提交",IDC_CHECK_MUTI_THREAD,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,325,24,56,10
+    EDITTEXT        IDC_EDIT_THREAD,426,21,34,14,ES_AUTOHSCROLL | NOT 
+                    WS_BORDER,WS_EX_STATICEDGE
+    LTEXT           "线程数:",IDC_STATIC_THREAD,393,25,29,8
+END
+
+IDD_HEADER_DLG DIALOGEX 0, 0, 429, 192
+STYLE DS_MODALFRAME | WS_MINIMIZEBOX | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "输入抓取到的Http Header(Post值请自行填入)"
+FONT 9, "宋体"
+BEGIN
+    EDITTEXT        IDC_EDIT_HEADER,1,1,428,171,ES_MULTILINE | 
+                    ES_AUTOVSCROLL | NOT WS_BORDER | WS_VSCROLL | WS_HSCROLL,
+                    WS_EX_STATICEDGE
+    PUSHBUTTON      "确定",IDC_BUTTON_ADD,189,175,65,14
+    PUSHBUTTON      "清空",IDC_BUTTON_CLEAR,387,175,33,14
+    EDITTEXT        IDC_EDIT_FOCUS,429,178,6,14,ES_AUTOHSCROLL | NOT 
+                    WS_BORDER
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_MAIN_DLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 520
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 443
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_MAIN_DLG DLGINIT
+BEGIN
+    IDC_COMBO_MOTHOD, 0x403, 4, 0
+0x4547, 0x0054, 
+    IDC_COMBO_MOTHOD, 0x403, 5, 0
+0x4f50, 0x5453, "\000" 
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_MAIN_ICON           ICON    DISCARDABLE     "res\\main.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MENU_HEADER MENU DISCARDABLE 
+BEGIN
+    POPUP "HEADER"
+    BEGIN
+        POPUP "插入/替换"
+        BEGIN
+            MENUITEM "Cookie",                      ID_MENUITEM_COOKIE
+            MENUITEM "Referer     ",                ID_MENUITEM_REFERER
+            POPUP "User-Agent"
+            BEGIN
+                MENUITEM "百度爬虫",                    ID_MENUITEM_UA_BAIDU
+                MENUITEM "谷歌爬虫",                    ID_MENUITEM_UA_GOOGLE
+
+                MENUITEM SEPARATOR
+                MENUITEM "IE",                          ID_MENUITEM_UA_IE
+                MENUITEM "Chrome",                      ID_MENUITEM_UA_CHROME
+
+                MENUITEM SEPARATOR
+                MENUITEM "安卓手机",                    ID_MENUITEM_UA_ANDROID
+
+                MENUITEM "iPhone",                      ID_MENUITEM_UA_IPHONE
+
+            END
+        END
+        MENUITEM "伪造IP      ",                ID_MENUITEM_FAKEIP
+    END
+END
+
+IDR_MENU_RETURN MENU DISCARDABLE 
+BEGIN
+    POPUP "RETURN"
+    BEGIN
+        MENUITEM "清空",                        ID_MENUITEM_CLEAR
+        MENUITEM "复制所有",                    ID_MENUITEM_COPYALL
+        MENUITEM "浏览器查看",                  ID_MENUITEM_BROWSER
+    END
+END
+
+IDR_MENU_LOADSAVE MENU DISCARDABLE 
+BEGIN
+    POPUP "载入保存"
+    BEGIN
+        MENUITEM "保存",                        ID_MENUITEM_SAVE
+        MENUITEM "载入",                        ID_MENUITEM_LOAD
+    END
+END
+
+#endif    // Chinese (中国) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE 4, 2
+#pragma code_page(936)
+#endif //_WIN32
+#include "res\GetPost.rc2"  // non-Microsoft Visual C++ edited resources
+#include "l.chs\afxres.rc"          // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

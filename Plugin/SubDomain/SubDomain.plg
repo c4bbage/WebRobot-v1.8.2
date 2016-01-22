@@ -1,0 +1,82 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: SubDomain - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x804 /fo"Release/SubDomain.res" /d "NDEBUG" /d "_AFXDLL" "H:\电影\【WebRobot】\WebRobot_8_发布插件\Plugin\SubDomain\SubDomain.rc"" 
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP7319.tmp" with contents
+[
+/nologo /MD /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_WINDLL" /D "_AFXDLL" /D "_MBCS" /D "_USRDLL" /Fp"Release/SubDomain.pch" /Yu"stdafx.h" /Fo"Release/" /Fd"Release/" /FD /c 
+"H:\电影\【WebRobot】\WebRobot_8_发布插件\Plugin\SubDomain\MainDlg.cpp"
+"H:\电影\【WebRobot】\WebRobot_8_发布插件\Plugin\SubDomain\SubDomain.cpp"
+"H:\电影\【WebRobot】\WebRobot_8_发布插件\Plugin\common\Tools\ButtonXP.cpp"
+"H:\电影\【WebRobot】\WebRobot_8_发布插件\Plugin\common\Tools\ComboBoxXP.cpp"
+"H:\电影\【WebRobot】\WebRobot_8_发布插件\Plugin\common\Tools\Draw.cpp"
+"H:\电影\【WebRobot】\WebRobot_8_发布插件\Plugin\common\Tools\MenuXP.cpp"
+"H:\电影\【WebRobot】\WebRobot_8_发布插件\Plugin\common\Tools\StatusBarXP.cpp"
+"H:\电影\【WebRobot】\WebRobot_8_发布插件\Plugin\common\Tools\ToolBarXP.cpp"
+"H:\电影\【WebRobot】\WebRobot_8_发布插件\Plugin\common\Tools\Tools.cpp"
+"H:\电影\【WebRobot】\WebRobot_8_发布插件\Plugin\common\IniFile\IniFile.cpp"
+"H:\电影\【WebRobot】\WebRobot_8_发布插件\Plugin\common\CoolMenu\NewMenu.cpp"
+"H:\电影\【WebRobot】\WebRobot_8_发布插件\Plugin\common\CoolMenu\NewToolBar.cpp"
+"H:\电影\【WebRobot】\WebRobot_8_发布插件\Plugin\common\ListCtrlEx\ListCtrlEx.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP7319.tmp" 
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP731A.tmp" with contents
+[
+/nologo /MD /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_WINDLL" /D "_AFXDLL" /D "_MBCS" /D "_USRDLL" /Fp"Release/SubDomain.pch" /Yc"stdafx.h" /Fo"Release/" /Fd"Release/" /FD /c 
+"H:\电影\【WebRobot】\WebRobot_8_发布插件\Plugin\SubDomain\StdAfx.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP731A.tmp" 
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP731B.tmp" with contents
+[
+/nologo /subsystem:windows /dll /incremental:no /pdb:"Release/SubDomain.pdb" /machine:I386 /def:".\SubDomain.def" /out:"../../bin/plugin/SubDomain.dll" /implib:"Release/SubDomain.lib" 
+".\Release\MainDlg.obj"
+".\Release\StdAfx.obj"
+".\Release\SubDomain.obj"
+".\Release\ButtonXP.obj"
+".\Release\ComboBoxXP.obj"
+".\Release\Draw.obj"
+".\Release\MenuXP.obj"
+".\Release\StatusBarXP.obj"
+".\Release\ToolBarXP.obj"
+".\Release\Tools.obj"
+".\Release\IniFile.obj"
+".\Release\NewMenu.obj"
+".\Release\NewToolBar.obj"
+".\Release\ListCtrlEx.obj"
+".\Release\SubDomain.res"
+]
+Creating command line "link.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP731B.tmp"
+<h3>Output Window</h3>
+Compiling resources...
+Compiling...
+StdAfx.cpp
+Compiling...
+MainDlg.cpp
+SubDomain.cpp
+ButtonXP.cpp
+ComboBoxXP.cpp
+Draw.cpp
+MenuXP.cpp
+StatusBarXP.cpp
+ToolBarXP.cpp
+Tools.cpp
+IniFile.cpp
+NewMenu.cpp
+NewToolBar.cpp
+ListCtrlEx.cpp
+Generating Code...
+Linking...
+   Creating library Release/SubDomain.lib and object Release/SubDomain.exp
+
+
+
+<h3>Results</h3>
+SubDomain.dll - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

@@ -1,0 +1,219 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Chinese (中国) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\AutoGetUrls.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""l.chs\\afxres.rc""          // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x2L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080404B0"
+        BEGIN
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "AutoGetUrls DLL\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "AutoGetUrls\0"
+            VALUE "LegalCopyright", "版权所有 (C) 2015\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "AutoGetUrls.DLL\0"
+            VALUE "ProductName", "AutoGetUrls Dynamic Link Library\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_MAIN_ICON           ICON    DISCARDABLE     "res\\main.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_MAIN_DLG DIALOGEX 0, 0, 739, 350
+STYLE WS_CHILD
+FONT 9, "宋体"
+BEGIN
+    LTEXT           "搜索引擎:",IDC_STATIC,5,10,37,8
+    COMBOBOX        IDC_COMBO_SEARCH_ENGINE,43,6,64,30,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "搜索:",IDC_STATIC,116,10,21,8
+    COMBOBOX        IDC_COMBO_SEARCH,139,6,245,343,CBS_DROPDOWN | WS_VSCROLL | 
+                    WS_TABSTOP
+    PUSHBUTTON      "搜索",IDC_BUTTON_SEARCH,390,6,50,15
+    CONTROL         "List1",IDC_LIST,"SysListView32",LVS_REPORT | 
+                    LVS_SHOWSELALWAYS | WS_TABSTOP,0,24,737,310,
+                    WS_EX_STATICEDGE
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_MAIN_DLG DLGINIT
+BEGIN
+    IDC_COMBO_SEARCH_ENGINE, 0x403, 5, 0
+0xd9b0, 0xc8b6, "\000" 
+    IDC_COMBO_SEARCH_ENGINE, 0x403, 5, 0
+0xc8b9, 0xe8b8, "\000" 
+    IDC_COMBO_SEARCH_ENGINE, 0x403, 5, 0
+0xd8b1, 0xa6d3, "\000" 
+    IDC_COMBO_SEARCH, 0x403, 19, 0
+0x6973, 0x6574, 0x773a, 0x7777, 0x742e, 0x3030, 0x736c, 0x6e2e, 0x7465, 
+"\000" 
+    IDC_COMBO_SEARCH, 0x403, 13, 0
+0x6966, 0x656c, 0x7974, 0x6570, 0x643a, 0x636f, "\000" 
+    IDC_COMBO_SEARCH, 0x403, 12, 0
+0x6e69, 0x6574, 0x7478, 0xb53a, 0xc2c7, 0x00bc, 
+    IDC_COMBO_SEARCH, 0x403, 16, 0
+0x6e69, 0x6574, 0x7478, 0x493a, 0x646e, 0x7865, 0x6f20, 0x0066, 
+    IDC_COMBO_SEARCH, 0x403, 16, 0
+0x6e69, 0x7275, 0x3a6c, 0x6f6c, 0x6967, 0x2e6e, 0x6870, 0x0070, 
+    IDC_COMBO_SEARCH, 0x403, 19, 0
+0x6e69, 0x6974, 0x6c74, 0x3a65, 0x6870, 0x6d70, 0x6179, 0x6d64, 0x6e69, 
+"\000" 
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_BITMAP_URL          BITMAP  DISCARDABLE     "res\\url.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MENU MENU DISCARDABLE 
+BEGIN
+    POPUP "menu"
+    BEGIN
+        MENUITEM "复制选定链接",                ID_MENUITEM_COPY
+        MENUITEM "保存所有链接",                ID_MENUITEM_SAVE
+        POPUP "删除"
+        BEGIN
+            MENUITEM "删除选定链接",                ID_MENUITEM_DELETE
+            MENUITEM "清空列表",                    ID_MENUITEM_CLEAR
+        END
+    END
+END
+
+#endif    // Chinese (中国) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE 4, 2
+#pragma code_page(936)
+#endif //_WIN32
+#include "res\AutoGetUrls.rc2"  // non-Microsoft Visual C++ edited resources
+#include "l.chs\afxres.rc"          // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

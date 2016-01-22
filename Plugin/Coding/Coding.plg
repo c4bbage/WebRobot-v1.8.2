@@ -1,0 +1,76 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: Coding - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x804 /fo"Release/Coding.res" /d "NDEBUG" /d "_AFXDLL" "H:\电影\【WebRobot】\WebRobot_8_发布插件\Plugin\Coding\Coding.rc"" 
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP72EC.tmp" with contents
+[
+/nologo /MD /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_WINDLL" /D "_AFXDLL" /D "_MBCS" /D "_USRDLL" /Fp"Release/Coding.pch" /Yu"stdafx.h" /Fo"Release/" /Fd"Release/" /FD /c 
+"H:\电影\【WebRobot】\WebRobot_8_发布插件\Plugin\Coding\Coding.cpp"
+"H:\电影\【WebRobot】\WebRobot_8_发布插件\Plugin\Coding\MainDlg.cpp"
+"H:\电影\【WebRobot】\WebRobot_8_发布插件\Plugin\common\SplitterControl\SplitterControl.cpp"
+"H:\电影\【WebRobot】\WebRobot_8_发布插件\Plugin\common\Tools\ButtonXP.cpp"
+"H:\电影\【WebRobot】\WebRobot_8_发布插件\Plugin\common\Tools\ComboBoxXP.cpp"
+"H:\电影\【WebRobot】\WebRobot_8_发布插件\Plugin\common\Tools\Draw.cpp"
+"H:\电影\【WebRobot】\WebRobot_8_发布插件\Plugin\common\Tools\MenuXP.cpp"
+"H:\电影\【WebRobot】\WebRobot_8_发布插件\Plugin\common\Tools\StatusBarXP.cpp"
+"H:\电影\【WebRobot】\WebRobot_8_发布插件\Plugin\common\Tools\ToolBarXP.cpp"
+"H:\电影\【WebRobot】\WebRobot_8_发布插件\Plugin\common\Tools\Tools.cpp"
+"H:\电影\【WebRobot】\WebRobot_8_发布插件\Plugin\common\URLEncode\URLEncode.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP72EC.tmp" 
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP72ED.tmp" with contents
+[
+/nologo /MD /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_WINDLL" /D "_AFXDLL" /D "_MBCS" /D "_USRDLL" /Fp"Release/Coding.pch" /Yc"stdafx.h" /Fo"Release/" /Fd"Release/" /FD /c 
+"H:\电影\【WebRobot】\WebRobot_8_发布插件\Plugin\Coding\StdAfx.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP72ED.tmp" 
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP72EE.tmp" with contents
+[
+/nologo /subsystem:windows /dll /incremental:no /pdb:"Release/Coding.pdb" /machine:I386 /def:".\Coding.def" /out:"../../bin/plugin/Coding.dll" /implib:"Release/Coding.lib" 
+".\Release\Coding.obj"
+".\Release\MainDlg.obj"
+".\Release\StdAfx.obj"
+".\Release\SplitterControl.obj"
+".\Release\ButtonXP.obj"
+".\Release\ComboBoxXP.obj"
+".\Release\Draw.obj"
+".\Release\MenuXP.obj"
+".\Release\StatusBarXP.obj"
+".\Release\ToolBarXP.obj"
+".\Release\Tools.obj"
+".\Release\URLEncode.obj"
+".\Release\Coding.res"
+]
+Creating command line "link.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP72EE.tmp"
+<h3>Output Window</h3>
+Compiling resources...
+Compiling...
+StdAfx.cpp
+Compiling...
+Coding.cpp
+MainDlg.cpp
+SplitterControl.cpp
+ButtonXP.cpp
+ComboBoxXP.cpp
+Draw.cpp
+MenuXP.cpp
+StatusBarXP.cpp
+ToolBarXP.cpp
+Tools.cpp
+URLEncode.cpp
+Generating Code...
+Linking...
+   Creating library Release/Coding.lib and object Release/Coding.exp
+
+
+
+<h3>Results</h3>
+Coding.dll - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

@@ -1,0 +1,448 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Chinese (中国) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\WebRobot.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""l.chs\\afxres.rc""          // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\WebRobot.ico"
+IDI_ICON_MAIN           ICON    DISCARDABLE     "res\\main.ico"
+IDI_ICON_ABOUT          ICON    DISCARDABLE     "res\\about.ico"
+IDI_ICON_PLUGIN         ICON    DISCARDABLE     "res\\plugin.ico"
+IDI_ICON_SETTING        ICON    DISCARDABLE     "res\\setting.ico"
+IDI_ICON_BROWSER        ICON    DISCARDABLE     "res\\Browser.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_WEBROBOT_DIALOG DIALOGEX 0, 0, 686, 427
+STYLE WS_MINIMIZEBOX | WS_MAXIMIZEBOX | WS_POPUP | WS_VISIBLE | WS_CAPTION | 
+    WS_SYSMENU | WS_THICKFRAME
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "WebRobot v1.8.2"
+FONT 9, "宋体"
+BEGIN
+END
+
+IDD_MAIN_DLG DIALOGEX 0, 0, 621, 393
+STYLE WS_CHILD
+FONT 9, "宋体", 0, 0, 0x1
+BEGIN
+    CONTROL         "Tree1",IDC_TREE,"SysTreeView32",TVS_HASBUTTONS | 
+                    TVS_HASLINES | TVS_LINESATROOT | TVS_SHOWSELALWAYS | 
+                    TVS_INFOTIP | TVS_FULLROWSELECT | WS_TABSTOP,0,0,166,393,
+                    WS_EX_STATICEDGE
+    CONTROL         "",IDC_SPLITTER,"Static",SS_BLACKFRAME | NOT WS_VISIBLE,
+                    167,0,1,393
+    CONTROL         "List1",IDC_LIST,"SysListView32",LVS_REPORT | 
+                    LVS_SINGLESEL | LVS_SHOWSELALWAYS | WS_TABSTOP,169,119,
+                    452,274,WS_EX_STATICEDGE
+    LTEXT           "Static",IDC_STATIC_TEXT,169,0,452,118,0,
+                    WS_EX_STATICEDGE
+END
+
+IDD_PLUGIN_DLG DIALOG DISCARDABLE  0, 0, 484, 263
+STYLE WS_CHILD
+FONT 9, "宋体"
+BEGIN
+END
+
+IDD_BROWSER_DLG DIALOGEX 0, 0, 535, 379
+STYLE WS_CHILD
+FONT 9, "宋体", 0, 0, 0x1
+BEGIN
+    CONTROL         "",IDC_EXPLORER,"{8856F961-340A-11D0-A96B-00C04FD705A2}",
+                    WS_TABSTOP,1,18,531,227
+    CONTROL         "List1",IDC_LIST,"SysListView32",LVS_REPORT | 
+                    LVS_SHOWSELALWAYS | WS_TABSTOP,1,247,289,131,
+                    WS_EX_STATICEDGE
+    COMBOBOX        IDC_COMBO_URL,25,1,364,346,CBS_DROPDOWN | WS_VSCROLL | 
+                    WS_TABSTOP
+    PUSHBUTTON      "",IDC_BUTTON_GO,391,1,25,14
+    PUSHBUTTON      "",IDC_BUTTON_BACKWARD,418,1,25,14
+    PUSHBUTTON      "",IDC_BUTTON_FORWARD,445,1,25,14
+    PUSHBUTTON      "",IDC_BUTTON_REFRESH,472,1,25,14
+    CONTROL         "",IDC_CHECK_URLS,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    501,4,22,10
+    CONTROL         "",IDC_SPLITTER2,"Static",SS_BLACKFRAME | NOT WS_VISIBLE,
+                    0,245,534,1
+    PUSHBUTTON      "",IDC_BUTTON_SETTING,1,1,20,14
+    CONTROL         "List1",IDC_LIST_SEARCH_KEYWORD,"SysListView32",
+                    LVS_REPORT | LVS_SHOWSELALWAYS | WS_TABSTOP,292,248,243,
+                    131,WS_EX_STATICEDGE
+END
+
+IDD_BROWSER_SETTING_DLG DIALOGEX 0, 0, 324, 212
+STYLE DS_MODALFRAME | WS_MINIMIZEBOX | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "抓取链接设置"
+FONT 9, "宋体", 0, 0, 0x1
+BEGIN
+    CONTROL         "抓取链接时过滤不包含“?”的URL",IDC_CHECK_QMARK,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,7,7,137,10
+    CONTROL         "浏览器抓取链接完毕时发出响声,以提醒是否抓取完成",
+                    IDC_CHECK_BEEP,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,
+                    23,204,10
+    CONTROL         "抓取链接完毕时把浏览器滚动条滚动到末尾",
+                    IDC_CHECK_VSCROLLTOEND,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,7,40,170,10
+    CONTROL         "List1",IDC_LIST_URL_FILTER,"SysListView32",LVS_REPORT | 
+                    LVS_SINGLESEL | LVS_SHOWSELALWAYS | WS_TABSTOP,7,72,310,
+                    133,WS_EX_STATICEDGE
+    LTEXT           "Google镜像:",IDC_STATIC,7,56,45,8
+    EDITTEXT        IDC_EDIT_GOOGLE_MIRROR,53,53,264,14,ES_AUTOHSCROLL | NOT 
+                    WS_BORDER,WS_EX_STATICEDGE
+    PUSHBUTTON      "保存",IDC_BUTTON_SAVE,267,36,50,14
+END
+
+IDD_SETTING_DLG DIALOG DISCARDABLE  0, 0, 682, 274
+STYLE WS_CHILD
+FONT 9, "宋体"
+BEGIN
+    LTEXT           "全局UserAgent:",IDC_STATIC,5,10,57,8
+    COMBOBOX        IDC_COMBO_USER_AGENT,63,7,612,30,CBS_DROPDOWN | 
+                    CBS_AUTOHSCROLL | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "保存",IDC_BUTTON_SAVE,5,44,50,14
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,8
+ PRODUCTVERSION 1,0,0,0
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080404b0"
+        BEGIN
+            VALUE "Comments", "BY:洪流 QQ:243107\0"
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "\0"
+            VALUE "FileVersion", "1, 0, 0, 8\0"
+            VALUE "InternalName", "WebRobot\0"
+            VALUE "LegalCopyright", "版权所有 (C) 2015\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "WebRobot.EXE\0"
+            VALUE "PrivateBuild", "\0"
+            VALUE "ProductName", "WebRobot 应用程序\0"
+            VALUE "ProductVersion", "1, 0, 0, 2\0"
+            VALUE "SpecialBuild", "\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_WEBROBOT_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 679
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 420
+    END
+
+    IDD_PLUGIN_DLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 477
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 256
+    END
+
+    IDD_BROWSER_SETTING_DLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 317
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 205
+    END
+
+    IDD_SETTING_DLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 675
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 267
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Cursor
+//
+
+IDC_MYSIZENS            CURSOR  DISCARDABLE     "res\\SizeNS.cur"
+IDC_MYSIZEWE            CURSOR  DISCARDABLE     "res\\SizeWE.cur"
+IDC_CURSOR_LISTMOVE     CURSOR  DISCARDABLE     "res\\ListMove.cur"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// 24
+//
+
+1                       24      DISCARDABLE     "res\\XPStyle.manifest"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_BITMAP_BOX_SINGLE   BITMAP  DISCARDABLE     "res\\boxSingle.bmp"
+IDB_BITMAP_PLUGIN       BITMAP  DISCARDABLE     "res\\PluginList.bmp"
+IDB_BITMAP_URL          BITMAP  DISCARDABLE     "res\\url.bmp"
+IDB_BITMAP_SETTING      BITMAP  DISCARDABLE     "res\\setting.bmp"
+IDB_BITMAP_GO           BITMAP  DISCARDABLE     "res\\go.bmp"
+IDB_BITMAP_BACK         BITMAP  DISCARDABLE     "res\\back.bmp"
+IDB_BITMAP_FORWARD      BITMAP  DISCARDABLE     "res\\forward.bmp"
+IDB_BITMAP_REFRESH      BITMAP  DISCARDABLE     "res\\refresh.bmp"
+IDB_BITMAP_UNCHECK      BITMAP  DISCARDABLE     "res\\uncheck.bmp"
+IDB_BITMAP_CHECK        BITMAP  DISCARDABLE     "res\\check.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MENU_PLUGIN MENU DISCARDABLE 
+BEGIN
+    POPUP "PLUGIN"
+    BEGIN
+        MENUITEM "刷新",                        ID_MENUITEM_REFRESH_PLUGIN_LIST
+
+        MENUITEM "设为不自动加载",              ID_MENUITEM_AUTOLOAD
+        MENUITEM "打开插件目录",                ID_MENUITEM_OPEN_PLUGIN_DIR
+    END
+END
+
+IDR_TRAYICON MENU DISCARDABLE 
+BEGIN
+    POPUP "托盘"
+    BEGIN
+        MENUITEM "显示(&S)",                    ID_MENUITEM_SHOW
+        MENUITEM "退出(&E)",                    ID_APP_SUSPEND
+    END
+END
+
+IDR_MENU_BROWSER_LIST MENU DISCARDABLE 
+BEGIN
+    POPUP "MAIN_LIST"
+    BEGIN
+        MENUITEM "复制选定链接(&C)",            ID_MENUITEM_COPYURL
+        MENUITEM "浏览选定链接(&O)",            ID_MENUITEM_OPENURL
+        MENUITEM "发送到注入检测",              ID_MENUITEM_SENDTO_INJECTION
+        MENUITEM "保存全部链接(CTRL+&S)",       ID_MENUITEM_SAVEURLS
+        MENUITEM SEPARATOR
+        POPUP "删除"
+        BEGIN
+            MENUITEM "删除选定链接(&D)",            ID_MENUITEM_DELETEURL
+            MENUITEM "清空列表内容(&A)",            ID_MENUITEM_CLEARLIST
+        END
+    END
+END
+
+IDR_MENU_BROWSER_SETTING MENU DISCARDABLE 
+BEGIN
+    POPUP "SETTING"
+    BEGIN
+        MENUITEM "插入",                        ID_MENUITEM_INSERT
+        MENUITEM "删除",                        ID_MENUITEM_DELETE
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_BROWSER_DLG DLGINIT
+BEGIN
+    IDC_EXPLORER, 0x376, 160, 0
+0x0000, 0x0000, 0x004c, 0x0000, 0x525f, 0x0000, 0x233e, 0x0000, 0x0000, 
+0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 
+0x0000, 0x0000, 0x004c, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0001, 
+0x0000, 0xd0e0, 0x0057, 0x3573, 0x11cf, 0x69ae, 0x0008, 0x2e2b, 0x6212, 
+0x000a, 0x0000, 0x0000, 0x0000, 0x004c, 0x0000, 0x1401, 0x0002, 0x0000, 
+0x0000, 0x00c0, 0x0000, 0x0000, 0x4600, 0x0080, 0x0000, 0x0000, 0x0000, 
+0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 
+0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0001, 0x0000, 
+0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 
+    IDC_COMBO_URL, 0x403, 22, 0
+0x7468, 0x7074, 0x2f3a, 0x772f, 0x7777, 0x622e, 0x6961, 0x7564, 0x632e, 
+0x6d6f, 0x002f, 
+    IDC_COMBO_URL, 0x403, 24, 0
+0x7468, 0x7074, 0x3a73, 0x2f2f, 0x7777, 0x2e77, 0x6f67, 0x676f, 0x656c, 
+0x632e, 0x6d6f, 0x002f, 
+    IDC_COMBO_URL, 0x403, 17, 0
+0x7468, 0x7074, 0x3a73, 0x2f2f, 0x2e73, 0x7462, 0x672e, 0x2f67, "\000" 
+    IDC_COMBO_URL, 0x403, 21, 0
+0x7468, 0x7074, 0x2f3a, 0x772f, 0x7777, 0x622e, 0x6e69, 0x2e67, 0x6f63, 
+0x2f6d, "\000" 
+    0
+END
+
+IDD_SETTING_DLG DLGINIT
+BEGIN
+    IDC_COMBO_USER_AGENT, 0x403, 66, 0
+0x7355, 0x7265, 0x412d, 0x6567, 0x746e, 0x203a, 0x6142, 0x6469, 0x7375, 
+0x6970, 0x6564, 0x2b72, 0x2b28, 0x7468, 0x7074, 0x2f3a, 0x772f, 0x7777, 
+0x622e, 0x6961, 0x7564, 0x632e, 0x6d6f, 0x732f, 0x6165, 0x6372, 0x2f68, 
+0x7073, 0x6469, 0x7265, 0x682e, 0x6d74, 0x0029, 
+    IDC_COMBO_USER_AGENT, 0x403, 85, 0
+0x7355, 0x7265, 0x412d, 0x6567, 0x746e, 0x203a, 0x6f4d, 0x697a, 0x6c6c, 
+0x2f61, 0x2e35, 0x2030, 0x6328, 0x6d6f, 0x6170, 0x6974, 0x6c62, 0x3b65, 
+0x4720, 0x6f6f, 0x6c67, 0x6265, 0x746f, 0x322f, 0x312e, 0x203b, 0x682b, 
+0x7474, 0x3a70, 0x2f2f, 0x7777, 0x2e77, 0x6f67, 0x676f, 0x656c, 0x632e, 
+0x6d6f, 0x622f, 0x746f, 0x682e, 0x6d74, 0x296c, "\000" 
+    IDC_COMBO_USER_AGENT, 0x403, 69, 0
+0x7355, 0x7265, 0x412d, 0x6567, 0x746e, 0x203a, 0x6f4d, 0x697a, 0x6c6c, 
+0x2f61, 0x2e34, 0x2030, 0x6328, 0x6d6f, 0x6170, 0x6974, 0x6c62, 0x3b65, 
+0x4d20, 0x4953, 0x2045, 0x2e36, 0x3b30, 0x5720, 0x6e69, 0x6f64, 0x7377, 
+0x4e20, 0x2054, 0x2e35, 0x3b31, 0x5320, 0x3156, 0x293b, "\000" 
+    IDC_COMBO_USER_AGENT, 0x403, 112, 0
+0x7355, 0x7265, 0x412d, 0x6567, 0x746e, 0x203a, 0x6f4d, 0x697a, 0x6c6c, 
+0x2f61, 0x2e35, 0x2030, 0x5728, 0x6e69, 0x6f64, 0x7377, 0x4e20, 0x2054, 
+0x2e35, 0x2931, 0x4120, 0x7070, 0x656c, 0x6557, 0x4b62, 0x7469, 0x352f, 
+0x3633, 0x352e, 0x2820, 0x484b, 0x4d54, 0x2c4c, 0x6c20, 0x6b69, 0x2065, 
+0x6547, 0x6b63, 0x296f, 0x4320, 0x7268, 0x6d6f, 0x2f65, 0x3931, 0x302e, 
+0x312e, 0x3830, 0x2e34, 0x3235, 0x5320, 0x6661, 0x7261, 0x2f69, 0x3335, 
+0x2e36, 0x0035, 
+    IDC_COMBO_USER_AGENT, 0x403, 115, 0
+0x7355, 0x7265, 0x412d, 0x6567, 0x746e, 0x203a, 0x704f, 0x7265, 0x2f61, 
+0x2e39, 0x3038, 0x2820, 0x6e41, 0x7264, 0x696f, 0x2064, 0x2e33, 0x2e32, 
+0x3b31, 0x4c20, 0x6e69, 0x7875, 0x203b, 0x704f, 0x7265, 0x2061, 0x6154, 
+0x6c62, 0x7465, 0x412f, 0x5244, 0x312d, 0x3032, 0x3135, 0x3138, 0x3331, 
+0x3b38, 0x5520, 0x203b, 0x6e65, 0x472d, 0x2942, 0x5020, 0x6572, 0x7473, 
+0x2f6f, 0x2e32, 0x3031, 0x322e, 0x3435, 0x5620, 0x7265, 0x6973, 0x6e6f, 
+0x312f, 0x2e32, 0x3030, "\000" 
+    IDC_COMBO_USER_AGENT, 0x403, 147, 0
+0x7355, 0x7265, 0x412d, 0x6567, 0x746e, 0x203a, 0x6f4d, 0x697a, 0x6c6c, 
+0x2f61, 0x2e35, 0x2030, 0x6928, 0x6850, 0x6e6f, 0x3b65, 0x4320, 0x5550, 
+0x6920, 0x6850, 0x6e6f, 0x2065, 0x534f, 0x3520, 0x315f, 0x6c20, 0x6b69, 
+0x2065, 0x614d, 0x2063, 0x534f, 0x5820, 0x2029, 0x7041, 0x6c70, 0x5765, 
+0x6265, 0x694b, 0x2f74, 0x3335, 0x2e34, 0x3634, 0x2820, 0x484b, 0x4d54, 
+0x2c4c, 0x6c20, 0x6b69, 0x2065, 0x6547, 0x6b63, 0x296f, 0x5620, 0x7265, 
+0x6973, 0x6e6f, 0x352f, 0x312e, 0x4d20, 0x626f, 0x6c69, 0x2f65, 0x4239, 
+0x3731, 0x2036, 0x6153, 0x6166, 0x6972, 0x372f, 0x3335, 0x2e34, 0x3834, 
+0x332e, "\000" 
+    0
+END
+
+#endif    // Chinese (中国) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE 4, 2
+#pragma code_page(936)
+#endif //_WIN32
+#include "res\WebRobot.rc2"  // non-Microsoft Visual C++ edited resources
+#include "l.chs\afxres.rc"          // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

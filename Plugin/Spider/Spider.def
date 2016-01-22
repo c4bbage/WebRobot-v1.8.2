@@ -1,0 +1,7 @@
+; Spider.def : Declares the module parameters for the DLL.
+
+LIBRARY      "Spider"
+DESCRIPTION  'Spider Windows Dynamic Link Library'
+
+EXPORTS
+    ; Explicit exports can go here

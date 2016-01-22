@@ -1,0 +1,303 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Chinese (中国) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\Spider.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""l.chs\\afxres.rc""          // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x2L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080404B0"
+        BEGIN
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "Spider DLL\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "Spider\0"
+            VALUE "LegalCopyright", "版权所有 (C) 2015\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "Spider.DLL\0"
+            VALUE "ProductName", "Spider Dynamic Link Library\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_MAIN_DLG DIALOGEX 0, 0, 687, 413
+STYLE WS_CHILD
+EXSTYLE WS_EX_ACCEPTFILES
+FONT 9, "宋体"
+BEGIN
+    CONTROL         "List1",IDC_LIST_SITE,"SysListView32",LVS_REPORT | 
+                    LVS_SHOWSELALWAYS | WS_TABSTOP,7,24,483,145,
+                    WS_EX_STATICEDGE
+    CONTROL         "Tree1",IDC_TREE_URL,"SysTreeView32",TVS_HASBUTTONS | 
+                    TVS_HASLINES | TVS_LINESATROOT | TVS_SHOWSELALWAYS | 
+                    TVS_INFOTIP | WS_TABSTOP,496,7,183,161,WS_EX_STATICEDGE
+    CONTROL         "List2",IDC_LIST_URL,"SysListView32",LVS_REPORT | 
+                    LVS_SINGLESEL | LVS_SHOWSELALWAYS | WS_TABSTOP,496,171,
+                    184,224,WS_EX_STATICEDGE
+    PUSHBUTTON      "爬行网站",IDC_BUTTON_SCAN,7,7,67,14
+    CONTROL         "List1",IDC_LIST_RESCANURL,"SysListView32",LVS_REPORT | 
+                    LVS_SINGLESEL | LVS_SHOWSELALWAYS | WS_TABSTOP,7,171,483,
+                    224,WS_EX_STATICEDGE
+    LTEXT           "线程数:",IDC_STATIC,95,11,29,8
+    EDITTEXT        IDC_EDIT_MAXTHREADNUM,127,8,25,12,ES_AUTOHSCROLL | 
+                    ES_NUMBER | NOT WS_BORDER,WS_EX_STATICEDGE
+    COMBOBOX        IDC_COMBO_LIMITDIR,239,6,149,160,CBS_DROPDOWNLIST | 
+                    CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "",IDC_BUTTON_APPEARANCE,475,5,16,17
+    CONTROL         "",IDC_SPLITTER,"Static",SS_BLACKFRAME | NOT WS_VISIBLE,
+                    493,0,1,395
+    CONTROL         "相似链接不爬行",IDC_CHECK_SIMILAR_URL,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,163,10,71,9
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_MAIN_DLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 680
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 406
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_MAIN_ICON           ICON    DISCARDABLE     "res\\main.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_MAIN_DLG DLGINIT
+BEGIN
+    IDC_COMBO_LIMITDIR, 0x403, 25, 0
+0xf6bd, 0xc0c5, 0xd0d0, 0xf8cd, 0xbed5, 0xf9b8, 0xbfc4, 0xbcc2, 0xc2cf, 
+0xc4b5, 0xb3d2, 0xe6c3, "\000" 
+    IDC_COMBO_LIMITDIR, 0x403, 29, 0
+0xc0c5, 0xd0d0, 0xf9b8, 0xbfc4, 0xbcc2, 0xa2a1, 0xbbd2, 0xb6bc, 0xbfc4, 
+0xbcc2, 0xc2cf, 0xc4b5, 0xb3d2, 0xe6c3, "\000" 
+    IDC_COMBO_LIMITDIR, 0x403, 33, 0
+0xc0c5, 0xd0d0, 0xf9b8, 0xbfc4, 0xbcc2, 0xa2a1, 0xbbd2, 0xa2a1, 0xfeb6, 
+0xb6bc, 0xbfc4, 0xbcc2, 0xc2cf, 0xc4b5, 0xb3d2, 0xe6c3, "\000" 
+    IDC_COMBO_LIMITDIR, 0x403, 17, 0
+0xc0c5, 0xd0d0, 0xf8cd, 0xbed5, 0xf9cb, 0xd0d3, 0xb3d2, 0xe6c3, "\000" 
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MENU_SPIDER_TOP MENU DISCARDABLE 
+BEGIN
+    POPUP "SPIDER"
+    BEGIN
+        MENUITEM "复制选中链接(&C)",            ID_MENUITEM_COPY
+        POPUP "删除"
+        BEGIN
+            MENUITEM "删除选中链接(&D)",            ID_MENUITEM_DELETE
+            MENUITEM "清空列表(&A)",                ID_MENUITEM_CLEAR_TOP_LIST
+
+        END
+        MENUITEM SEPARATOR
+        MENUITEM "添加URL到列表(&U)",           ID_MENUITEM_ADDURL
+        MENUITEM "导入URL文件(&I)",             ID_MENUITEM_IMPORT
+    END
+END
+
+IDR_MENU_SPIDER_RIGHT_LIST MENU DISCARDABLE 
+BEGIN
+    POPUP "Spider Left List"
+    BEGIN
+        MENUITEM "复制选中链接(&C)",            ID_MENUITEM_RIGHT_COPY
+        MENUITEM "复制来源页面(&R)",            ID_MENUITEM_RIGHT_COPYSRCPAGE
+
+        MENUITEM SEPARATOR
+        MENUITEM "删除选定链接(&D)",            ID_MENUITEM_RIGHT_DELSEL
+        MENUITEM "清空链接列表(&A)",            ID_MENUITEM_RIGHT_CLEARALL
+        MENUITEM SEPARATOR
+        MENUITEM "保存全部链接(&S)",            ID_MENUITEM_RIGHT_SAVEALLURLS
+
+        MENUITEM "导入URL文件(&I)",             ID_MENUITEM_RIGHT_IMPORTFILE
+    END
+END
+
+IDR_MENU_SPIDER_RIGHT_TREE MENU DISCARDABLE 
+BEGIN
+    POPUP "Spider Left"
+    BEGIN
+        MENUITEM "浏览选定链接(&V)",            ID_MENUITEM_RIGHT_VISIT
+        MENUITEM "复制选定链接(&C)",            ID_MENUITEM_RIGHT_TREE_COPY
+        MENUITEM "清空列表内容(&A)",            ID_MENUITEM_TREE_CLEAR
+        MENUITEM "定位来源页面(&F)",            ID_MENUITEM_GOTO_SRCPAGE
+        MENUITEM SEPARATOR
+        MENUITEM "保存全部链接(&U)",            ID_MENUITEM_TREE_SAVEALLURLSTOFILE
+
+        MENUITEM "导入URL文件(&I)",             ID_MENUITEM_TREE_IMPORT_URLS
+        MENUITEM SEPARATOR
+        MENUITEM "展开所有项目(&E)",            ID_MENUITEM_EXPAND
+        MENUITEM "折叠所有项目(&Z)",            ID_MENUITEM_COLLAPSE
+    END
+END
+
+IDR_MENU_SPIDER_BOTTOM MENU DISCARDABLE 
+BEGIN
+    POPUP "Spider Bottom List"
+    BEGIN
+        MENUITEM "清空列表内容(&A)",            ID_MENUITEM_DELETEALLURLS
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_BITMAP_1            BITMAP  DISCARDABLE     "res\\RootSite.bmp"
+IDB_BITMAP_2            BITMAP  DISCARDABLE     "res\\DirNotOpen.bmp"
+IDB_BITMAP_3            BITMAP  DISCARDABLE     "res\\DirOpened.bmp"
+IDB_BITMAP_4            BITMAP  DISCARDABLE     "res\\URLLink.bmp"
+IDB_BITMAP_5            BITMAP  DISCARDABLE     "res\\UrlLinkFocus.bmp"
+IDB_BITMAP_6            BITMAP  DISCARDABLE     "res\\bitmap1.bmp"
+IDB_BITMAP_7            BITMAP  DISCARDABLE     "res\\MailURL.bmp"
+IDB_BITMAP_8            BITMAP  DISCARDABLE     "res\\what_file.bmp"
+IDB_BITMAP_9            BITMAP  DISCARDABLE     "res\\Show_List.bmp"
+IDB_BITMAP_10           BITMAP  DISCARDABLE     "res\\Link.bmp"
+IDB_BITMAP_11           BITMAP  DISCARDABLE     "res\\HasSubLink.bmp"
+IDB_BITMAP_A            BITMAP  DISCARDABLE     "res\\ScanTopList.bmp"
+IDB_BITMAP_B            BITMAP  DISCARDABLE     "res\\TESTURL.bmp"
+IDB_BITMAP_C            BITMAP  DISCARDABLE     "res\\bmp00001.bmp"
+IDB_BITMAP_D            BITMAP  DISCARDABLE     "res\\Show_Tree.bmp"
+#endif    // Chinese (中国) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE 4, 2
+#pragma code_page(936)
+#endif //_WIN32
+#include "res\Spider.rc2"  // non-Microsoft Visual C++ edited resources
+#include "l.chs\afxres.rc"          // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

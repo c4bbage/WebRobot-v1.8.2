@@ -1,0 +1,7 @@
+; ScanInjection.def : Declares the module parameters for the DLL.
+
+LIBRARY      "ScanInjection"
+DESCRIPTION  'ScanInjection Windows Dynamic Link Library'
+
+EXPORTS
+    ; Explicit exports can go here
